@@ -42,20 +42,20 @@
             </div>
             <div id="toggle-btn-container" class="">
                 <ul id='toggle-btns' class="padding-section">
-                    <li class="">
+                    <li class="py-2">
                         <button class={current === 'family' ? 'selected border-selected': 'not-selected'} on:click={() => {
                             familyClick();
                             current = 'family';
                         }}>Family Gathering</button>
                     </li>
     
-                    <li class="">
+                    <li class="py-2">
                         <button class={current === 'special' ? 'selected border-selected': 'not-selected'} on:click={() => {
                             specialEventsClick()
                             current = 'special'
                         }}>Special Events</button>
                     </li>
-                    <li class="">
+                    <li class="py-2">
                         <button class={current === 'social' ? 'selected border-selected': 'not-selected'} on:click={() => {
                             socialEventsClick();
                             current = 'social';

@@ -8,11 +8,11 @@ import Header from "./Header.svelte";
 
         <section class='sub-hero'>
             <div>
-                <h1 class="heading-xl text-res">Exquisite dining since 1989</h1>
-            <p class="p-bigger text-res">
+                <h1 class="heading-xl text-res my-4 md:my-6">Exquisite dining since 1989</h1>
+            <p class="p-bigger text-res my-4 md:pb-4">
             Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.
             </p>
-            <div class='btn-container'>
+            <div class='btn-container padding-block-m'>
                 <button>
                     <a class="btn-general dark-btn" href="/reservations">
                         BOOK A TABLE
@@ -30,7 +30,7 @@ import Header from "./Header.svelte";
         background-image: url('https://ik.imagekit.io/a8p7pl7hs/dinesite/images/homepage/hero-bg-mobile_n_HrkbLl1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674487856463');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center top;
         color: white;
         height: 100vh;
     }
@@ -49,16 +49,23 @@ import Header from "./Header.svelte";
         justify-content: center;
     }
 
-    @media (min-width: 600px) and (max-width: 50em) {
+    @media (min-width: 550px) and (max-width: 50em) {
         main {
             background-image: url('https://ik.imagekit.io/a8p7pl7hs/dinesite/images/homepage/hero-bg-tablet_7_tQ5V3eEH.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674487857793');
         }
-    }
 
-    @media (max-width: 50em) {
         .hero {
             grid-template-rows: 40% auto;
-            align-self: center;
+            /* align-self: center; */
+            align-self: end;
+            padding-bottom: 3em;
+        }
+    }
+
+    @media (min-width: 300px) and (max-width: 550px) {
+        .hero {
+            align-self: end;
+            padding-bottom: 2em;
         }
     }
    

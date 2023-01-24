@@ -21,12 +21,12 @@
     
         <div id='form-text-container'>
             <section class="text-white">
-                <h1 class="heading-l text-res">Reservations</h1>
-                <p class="text-center text-res">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
+                <h1 class="heading-l text-res md:heading-xl mb-6 sm:mb4">Reservations</h1>
+                <p class="text-center text-res pr-0 sm:pr-6">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
             </section>
             
             <section class="">
-                <form action="" class="shadow">
+                <form action="" class="shadow flex flex-col">
                     <label for="name-input"></label>
                     <input type="text" maxlength="22" id='name-input' placeholder='Name' class="mb-8" required/>
                 

@@ -110,8 +110,8 @@ ul[role="list"] {
   
   .heading-xl {
       font-weight: 300;
-      font-size: var(--heading-xl-size);
-      line-height: var(--heading-xl-size);
+      font-size: clamp(var(--heading-l-size), 5vw, var(--heading-xl-size));
+      line-height: clamp(var(--heading-l-size), 5vw, var(--heading-xl-size));
       letter-spacing: -1px;
       text-align: center;
   }
@@ -171,6 +171,18 @@ ul[role="list"] {
   
   .padding-block-m {
       padding-block: var(--padding-m);
+  }
+
+  .margin-bottom-s {
+      margin-bottom: 0.3em;
+  }
+
+  .margin-bottom-m {
+      margin-bottom: 0.5em;
+  }
+
+  .margin-top-s {
+      margin-top: 0.3em;
   }
   
   .shadow {

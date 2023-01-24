@@ -5,7 +5,7 @@
 <div id="menu-section" class="dark-block padding-block-xxl">
     <div class="even-cols container">
         <section class='highlights-text'>
-            <h3 class="heading-l text-res">A few highlights from our menu</h3>
+            <h3 class="heading-l text-res mb-4">A few highlights from our menu</h3>
             <p class="p-bigger text-res">We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.</p>
         </section>
         
