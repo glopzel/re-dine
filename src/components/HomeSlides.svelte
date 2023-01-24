@@ -12,7 +12,7 @@
     }
 
     const specialEventsClick = () => {
-        src='https://ik.imagekit.io/a8p7pl7hs/dinesite/images/homepage/special-events-mobile_2x_dVcZBqaOG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674487858456'
+        src='https://ik.imagekit.io/a8p7pl7hs/dinesite/images/homepage/special-events-desktop_2x_n-DHC1qxBZ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674487858661'
         title='Special Events'
         content="Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal."
     }
