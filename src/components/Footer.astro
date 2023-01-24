@@ -1,0 +1,66 @@
+<footer class="dark-block padding-block-xl">
+    <div class="container grid-variation">
+        <div class="footer-logo">
+            <a href="/">
+                <img src="https://ik.imagekit.io/a8p7pl7hs/dinesite/images/logo_g7_sLIADl.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1674487851706" alt="" />
+            </a>
+        </div>
+        <div class="inner-footer-grid">
+            <div class="padding-block-m">
+                <p>Marthwaite, Sedbergh</p>
+                <p>Cumbria</p>
+                <p>&#43;00 44 123 4567</p>
+            </div>
+            <div class="padding-block-m">
+                <p>Open Times</p>
+                <p>Mon &#45; Fri&#58; 09:00 AM &#45; 10&#58;00 PM</p>
+                <p>Sat &#45; Sun&#58; 09:00 AM &#45; 11&#58;30 PM</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style> 
+    footer {
+        /* height: 240px; */
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    /* md:grid-cols-2 sm:grid-rows-3 text-center  */
+
+    .footer-logo {
+        margin-inline: auto;
+    }
+
+    .grid-variation {
+        display: grid;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    @media (min-width: 600px) and (max-width: 50em) {
+        .grid-variation {
+            grid-template-columns: repeat(2, 1fr);
+            text-align: left;
+        }
+    }
+   
+    @media (min-width: 50em) {
+        .grid-variation {
+            grid-template-columns: 30% 70%;
+        }
+
+        .inner-footer-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: left;
+        }
+
+        .footer-logo {
+            margin-inline: 0;
+        }
+    }
+</style>

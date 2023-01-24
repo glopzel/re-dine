@@ -1,0 +1,257 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600;700&display=swap');
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+
+  + a touch of andy bell's reset
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+  height: 100%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* h1, h2, h3 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+}
+
+p, a, span {
+  font-family: 'Outfit', sans-serif;
+} */
+
+button {
+    background: transparent;
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+
+:root {
+    --p-beaver: rgb(158, 127, 102);
+    --p-cod-gray: rgb(17, 17, 17);
+    --s-mirage: rgb(23, 25, 43);
+    --s-ebony: rgb(36, 43, 55);
+    --s-shuttle: rgb(92, 103, 121);
+  
+    --heading-xl-size: 5rem;
+    --heading-l-size: 3rem;
+    --heading-32: 2rem;
+    --heading-m-size: 1.25rem;
+    --heading-s-size: 1rem;
+  
+    --body-1-size: 1.25rem;
+    --body-2-size: 1rem;
+  
+    --padding-s: 0.5rem;
+      --padding-m: 0.75rem;
+      --padding-l: 1rem;
+      --padding-xl: 3rem;
+  }
+  
+  html, body {
+      height: 100%;
+  }
+  
+  .heading-xl {
+      font-weight: 300;
+      font-size: var(--heading-xl-size);
+      line-height: var(--heading-xl-size);
+      letter-spacing: -1px;
+      text-align: center;
+  }
+  
+  .heading-l {
+      font-weight: 700;
+      font-size: var(--heading-32);
+      text-align: center;
+      line-height: var(--heading-l-size);
+      letter-spacing: -0.5;
+  }
+  
+  .heading-m {
+      font-weight: 700;
+      font-size: var(--heading-m-size);
+      line-height: 24px;
+      letter-spacing: -0.25;
+  }
+  
+  .heading-s {
+      font-weight: 600;
+      font-size: var(--heading-s-size);
+      line-height: 28px;
+      letter-spacing: 2.5;
+  }
+  
+  .p-bigger {
+      font-size: var(--body-1-size);
+      line-height: 30px;
+  }
+  
+  .p-smaller {
+      font-size: var(--body-2-size);
+      line-height: 26px;
+  }
+  
+  .container {
+      --max-width: 1110px;
+      --padding: 3rem;
+      /* chooses the smaller between max width and 100% minus padding on each side */
+      width: min(var(--max-width), 100% - var(--padding) * 2);
+      margin-inline: auto;
+  }
+  
+  .even-cols {
+      display: grid;
+      gap: 1rem;
+  }
+  
+  .padding-block-xxl {
+      padding-block: calc(var(--padding-xl) * 2);
+  }
+  
+  .padding-block-xl {
+      padding-block: var(--padding-xl);
+  }
+  
+  .padding-block-m {
+      padding-block: var(--padding-m);
+  }
+  
+  .shadow {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  }
+  
+  a {
+      display: block;
+  }
+  
+  button {
+    text-transform: uppercase;
+  }
+  
+  .text-res {
+      text-align: center;
+  }
+  
+  /* FIX THESE ONES */
+  .screen-block {
+      height: 820px;
+  }
+  
+  .dark-block {
+      background: var(--p-cod-gray);
+      color: white;
+  }
+  
+  .dark-text {
+      color: #242B37;
+  }
+  
+  .btn-general {
+      padding: 25px 55px;
+  }
+  
+  .dark-btn, .btn-black {
+      border: 1px solid white;
+      transition: all 0.1s ease-out;
+      color: white;
+  }
+  
+  .btn-black {
+      background: black;
+  }
+  
+  .dark-btn:hover, .btn-black:hover, .btn-general:focus-within {
+      background: white;
+      border: 1px solid black;
+      color: black;
+  }
+  
+  .slides-links-active {
+      color: #4C4C4C;
+  }
+  
+  .dark-links-inactive {
+      opacity: 0.5;
+      mix-blend-mode: normal;
+  }
+  
+  img {
+      margin-inline: auto;
+  }
+  
+  @media (min-width: 50em) {
+      .even-cols {
+          grid-auto-flow: column;
+          grid-auto-columns: 1fr;
+      }
+  
+      .heading-l {
+          font-size: var(--heading-l-size);
+      }
+  
+      .text-res {
+          text-align: left;
+      }
+  
+      img {
+          margin-inline: 0
+      }
+  }

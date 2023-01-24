@@ -1,0 +1,57 @@
+<div>
+    <div class="container">
+        <section class="padding-block-xl even-cols">
+            <div class="img-block">
+                <img class="top-img shadow" src="https://ik.imagekit.io/a8p7pl7hs/dinesite/images/homepage/enjoyable-place-desktop_WoZwad8Lg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674495222553" alt="" />
+            </div>
+            <div class="descriptions-main">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="71" height="7"><g fill="none" fill-rule="evenodd"><path fill="#9E7F66" d="M15 3h56v1H15z"/><circle cx="3.5" cy="3.5" r="3" stroke="#9E7F66"/></g></svg>
+                <h2 class="heading-l text-res">Enjoyable place for all the family</h2>
+                <p class="p-bigger text-res">Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.</p>
+            </div>
+        </section>
+        
+        <section id="flip-section" class="padding-block-xl even-cols">
+            <div class="descriptions-main">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="71" height="7"><g fill="none" fill-rule="evenodd"><path fill="#9E7F66" d="M15 3h56v1H15z"/><circle cx="3.5" cy="3.5" r="3" stroke="#9E7F66"/></g></svg>
+                <h2 class="heading-l text-res">The most locally sourced food</h2>
+                <p class="p-bigger text-res">All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.</p>
+            </div>
+            <div class="img-block">
+                <img class="bottom-img shadow" src="https://ik.imagekit.io/a8p7pl7hs/dinesite/images/homepage/locally-sourced-desktop_s3--p0M6RM.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674487859620" alt="" />
+            </div>
+        </section>
+    </div>
+</div>
+
+<style>
+    /* .descriptions-main {
+        display: flex;
+        flex-direction: column-reverse;
+    } */
+    #flip-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .descriptions-main svg {
+        visibility: hidden;
+    }
+
+    @media (min-width: 50em) {
+        .descriptions-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 3em;
+        }
+
+        .descriptions-main svg {
+            visibility: visible;
+        }
+
+        #flip-section {
+            display: grid;
+        }
+    }
+</style>

@@ -1,0 +1,90 @@
+---
+import Header from "./Header.svelte";
+---
+
+<main>
+    <div class="container hero">
+        <Header />
+
+        <section class='sub-hero'>
+            <div>
+                <h1 class="heading-xl text-res">Exquisite dining since 1989</h1>
+            <p class="p-bigger text-res">
+            Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.
+            </p>
+            <div class='btn-container'>
+                <button>
+                    <a class="btn-general dark-btn" href="/reservations">
+                        BOOK A TABLE
+                    </a>
+                </button>
+            </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<style>
+    main {
+        display: flex;
+        background-image: url('https://ik.imagekit.io/a8p7pl7hs/dinesite/images/homepage/hero-bg-mobile_n_HrkbLl1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674487856463');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 16;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (min-width: 600px) and (max-width: 50em) {
+        main {
+            background-image: url('https://ik.imagekit.io/a8p7pl7hs/dinesite/images/homepage/hero-bg-tablet_7_tQ5V3eEH.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674487857793');
+        }
+    }
+
+    @media (max-width: 50em) {
+        .hero {
+            grid-template-rows: 40% auto;
+            align-self: center;
+        }
+    }
+   
+    @media (min-width: 50em) {
+        main {
+            background-image: url('https://ik.imagekit.io/a8p7pl7hs/dinesite/images/homepage/hero-bg-desktop_91r82U0nd.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674487860743');
+        }
+
+        .hero section {
+            width: 50%;
+        }
+
+        .sub-hero {
+            display: flex;
+            align-items: center;
+            height: 80%;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: start;
+        }
+
+        h1 {
+            font-size: clamp(32px, 10vh, 80px);
+            line-height: 80px;
+        }
+    }
+</style>
