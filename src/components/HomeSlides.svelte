@@ -33,9 +33,9 @@
         <div id="content-toggled" class="">
             <div id="descriptions-toggled" class="padding-section">
                 <h4 class="heading-l text-res">{title}</h4>
-                <p class="p-bigger text-res">{content}</p>
+                <p class="p-bigger text-res mb-6 md:mb-4 lg:mb-0">{content}</p>
                 <div class="book-btn-container">
-                    <button class="">
+                    <button>
                         <a href="/reservations" class="btn-general btn-black">Book a table</a>
                     </button>
                 </div>

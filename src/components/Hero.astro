@@ -30,7 +30,7 @@ import Header from "./Header.svelte";
         background-image: url('https://ik.imagekit.io/a8p7pl7hs/dinesite/images/homepage/hero-bg-mobile_n_HrkbLl1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674487856463');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center bottom;
         color: white;
         height: 100vh;
     }
@@ -62,9 +62,12 @@ import Header from "./Header.svelte";
     }
 
     @media (max-width: 550px) {
+        main {
+            padding-bottom: 3em;
+        }
         .hero {
             align-self: end;
-            padding-bottom: 2em;
+            /* padding-bottom: 2em; */
         }
     }
    
